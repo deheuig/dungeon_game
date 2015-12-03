@@ -17,6 +17,21 @@ def get_locations():
 
   # return monster, door, start
 
+def move_player(player, move):
+  # get the player position
+  # if move is left, y - 1
+  # if move is right, y + 1
+  # if move is up, x - 1
+  # if move is down, x + 1
+  return player
+
+def get_moves(player):
+  MOVES =['LEFT', 'RIGHT', 'UP', 'DOWN']
+  # if player's y is 0 remove LEFT
+  # if player's x is 0 remove UP
+  # if player's y is 2 remove RIGHT
+  # if player's x is 2 remove DOWN
+  return MOVES
 
 while True:
   print("Welome, welcome to dungeon!")
